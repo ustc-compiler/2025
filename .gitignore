@@ -276,7 +276,9 @@ dist
 .pnp.*
 
 # IDE
-.vscode/
+.vscode/*
+# recommended extensions
+!.vscode/extensions.json
 .idea/
 
 # macOS

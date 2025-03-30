@@ -186,3 +186,9 @@ $ make
 然后再次运行你的错误代码，Asan 会提供更详细的报错信息。
 
 注：要更换到别的 build type（如 Debug 或 Release）时需要显式指定，否则 cmake 会使用 cached 的版本。
+
+## 现代C++
+
+如果对一些语言特性不了解，可以速览 [Modern C++ Tutorial: C++11/14/17/20 On the Fly](https://github.com/changkun/modern-cpp-tutorial)。如果有更细节之处没有讲明白，可以参考 [C++ reference](https://en.cppreference.com/w/)。
+
+> **虽然只有一小段话，但这比上面的章节都更加重要。**

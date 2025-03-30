@@ -1,6 +1,6 @@
-# USTC _Principles and Techniques of Compiler_ 2023 course homepage
+# USTC _Principles and Techniques of Compiler_ 2025 course homepage
 
-Homepage link: <https://ustc-compiler-principles.github.io/2023>
+Homepage link: <https://ustc-compiler.github.io/2025>
 
 This README is a toturial of how to write and preview the docs.
 
@@ -30,6 +30,8 @@ npm install # then install Prettier and AutoCorrect
 ```
 
 See [Prettier Doc: Editor Integration](https://prettier.io/docs/en/editors.html) and [AutoCorrect: VS Code Extension](https://github.com/huacnlee/autocorrect#vs-code-extension) for editor intergration.
+
+> Type Ctrl+Shift+P and "show recommended extensions" to see these extensions and install them. VSCode might pop up a window. Just install these extensions.
 
 You should **format markdown files before commit**:
 

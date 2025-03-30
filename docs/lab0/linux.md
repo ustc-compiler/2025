@@ -274,3 +274,11 @@ Hello VirtualBox!
     文件下载：在 VSCode 的 explorer 中对相关文件进行右键并选择下载。
 
 更多关于 VSCode 的操作，欢迎同学自行探索。
+
+## 1.5 Shell
+
+可以参考[网络、文本处理工具与 Shell 脚本](https://101.lug.ustc.edu.cn/Ch06/)、[Shell 高级文本处理与正则表达式](https://101.lug.ustc.edu.cn/Ch09/)和[UCB: Sysadmin DeCal](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/DeCal/)。
+
+推荐使用[oh-my-zsh](https://ohmyz.sh/)，同时参考其[Plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)说明。
+
+> https://github.com/zsh-users/zsh-autosuggestions
