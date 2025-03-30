@@ -15,7 +15,7 @@
 
 - 时间：
 - 地点：
-- 主讲教师：（[主页](http://staff.ustc.edu.cn/~chengli7/)）
+- 主讲教师：
 - 助教：
 
 - QQ 群：

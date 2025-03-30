@@ -51,6 +51,14 @@ npm run format  # to format all files under docs/
 
 Read <https://squidfunk.github.io/mkdocs-material/reference/admonitions/> for more details.
 
+## Deployment
+
+1. Enable GitHub Actions.
+2. Push an commit to trigger the workflow, create the branch gh-pages and generete pages.
+3. In Settings > Pages > Build and deployment
+   1. select the "Deploy from a branch" option in "Source"
+   2. select "gh-pages" in "Branch"
+
 ## License
 
 All texts are All Rights Reserved by default.
