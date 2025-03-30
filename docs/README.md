@@ -32,5 +32,5 @@
 - <div id='textbook'></div>[1] 陈意云、张昱，[编译原理（第 4 版）](http://staff.ustc.edu.cn/~yuzhang/compiler/book_compiler_hep_v4.pdf)
 
 > 该项目 fork 自 <https://github.com/ustc-compiler-principles/2023> 并结合 <https://github.com/ustc-compiler/2024fall> 进行变更。
-> 
+>
 > 感谢所有作者和提出 Issue 的同学。**欢迎为课程主页提交 Issue 和 Pull Request！**

@@ -35,7 +35,7 @@ clangd 是一个语言服务器，是 LLVM 项目的一部分。更多介绍见 
 
 ### Dev Container
 
-> VSCode + Container的结合！不用再担心搞乱环境啦！
+> VSCode + Container 的结合！不用再担心搞乱环境啦！
 
 TODO
 

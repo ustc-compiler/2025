@@ -187,7 +187,7 @@ $ make
 
 注：要更换到别的 build type（如 Debug 或 Release）时需要显式指定，否则 cmake 会使用 cached 的版本。
 
-## 现代C++
+## 现代 C++
 
 如果对一些语言特性不了解，可以速览 [Modern C++ Tutorial: C++11/14/17/20 On the Fly](https://github.com/changkun/modern-cpp-tutorial)。如果有更细节之处没有讲明白，可以参考 [C++ reference](https://en.cppreference.com/w/)。
 
