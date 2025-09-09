@@ -16,11 +16,13 @@
 
 - 时间：周一 1、2 节，周三 3、4 节 (1~15 周)
 - 地点：GT-B203
-- 主讲教师：张昱 ([](mailto:yuzhang@ustc.edu.cn))
+- 主讲教师：张昱 [:material-email:](mailto:yuzhang@ustc.edu.cn) [:simple-gitlab:](https://git.lug.ustc.edu.cn/yuzhang)
 - 助教：
-  - 丁伯尧
-  - 刘硕
-  - 石磊鑫
+  - 丁伯尧 [:material-email:](mailto:via@mail.ustc.edu.cn) [:simple-gitlab:](https://git.lug.ustc.edu.cn/dby)
+  - 刘硕 [:material-email:](mailto:zkdliushuo@mail.ustc.edu.cn) [:simple-gitlab:](https://git.lug.ustc.edu.cn/liushuo_ustc)
+  - 石磊鑫 [:material-email:](mailto:slx_ustc@mail.ustc.edu.cn) [:simple-gitlab:](https://git.lug.ustc.edu.cn/shilx)
+- 场外支持：
+  - 李清伟 [:material-email:](mailto:lqw332664203@mail.ustc.edu.cn) [:simple-gitlab:](https://git.lug.ustc.edu.cn/Lslightly)
 - QQ 群：1016437528
 - Issue 讨论区：<https://git.lug.ustc.edu.cn/compiler/course/-/issues>
 - 录课视频（需校内统一身份认证）：待定
