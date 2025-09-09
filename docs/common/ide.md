@@ -8,7 +8,7 @@
 
 官方文档见 [Configure C/C++ debugging](https://code.visualstudio.com/docs/cpp/launch-json-reference)。
 
-其中可能有用的特性包括：
+其中可能有用的属性包括：
 
 - `program`, `args`, `cwd`, `environment`, `MIMode`, `miDebuggerPath`, `stopAtEntry`
 - [Logpoints](https://code.visualstudio.com/docs/debugtest/debugging#_logpoints)
@@ -24,11 +24,11 @@ clangd 是一个语言服务器，是 LLVM 项目的一部分。更多介绍见 
 - 根据项目类型（这里实验统一为 CMake-based projects）修改配置文件以自动生成 `compile_commands.json`.
 - 如果 VSCode 安装了 C/C++ 插件，请按照 [说明](https://stackoverflow.com/questions/77958376/visual-code-conflict-between-clangd-and-c-c-intellisense) 和 [issue](https://github.com/clangd/vscode-clangd/issues/595) 在相应位置 (用户或工作区) 禁用相关配置。
 
-[参考视频](https://www.bilibili.com/video/BV1C5PoeeEtA/?share_source=copy_web&vd_source=3a6b48c4cf1aa32946e17fa3e975e564)
+> [参考视频](https://www.bilibili.com/video/BV1C5PoeeEtA/?share_source=copy_web&vd_source=3a6b48c4cf1aa32946e17fa3e975e564)
 
 ### CMake
 
-在使用 CMake 插件时，实验最少需了解 [The CMake Tools configure step](https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/configure.md#the-cmake-tools-configure-step) 中的 "The configuration options"。在 [cmake.configureSettings](https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/cmake-settings.md#cmake-settings):
+在实验中使用 CMake 插件时，最少需了解 [The CMake Tools configure step](https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/configure.md#the-cmake-tools-configure-step) 中的 "The configuration options"。在 [cmake.configureSettings](https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/cmake-settings.md#cmake-settings):
 
 - `cmake.buildEnvironment` 用于设置环境变量。
 - `cmake.configureSettings` 通过 `key: value` 用于在配置时添加变量定义 `-Dkey=value`。

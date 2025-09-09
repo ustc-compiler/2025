@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/ustc-compiler/2025#readme",
   "dependencies": {
-    "autocorrect-node": "^2.8.4",
+    "autocorrect-node": "^2.14.0",
     "prettier": "^3.1.0"
   }
 }

@@ -189,6 +189,6 @@ $ make
 
 ## 现代 C++
 
-如果对一些语言特性不了解，可以速览 [Modern C++ Tutorial: C++11/14/17/20 On the Fly](https://github.com/changkun/modern-cpp-tutorial)。如果有更细节之处没有讲明白，可以参考 [C++ reference](https://en.cppreference.com/w/)。
+> 什么？你感觉了解了以上还是在用古法 C++ 编程，看看下面的参考吧。
 
-> **虽然只有一小段话，但这比上面的章节都更加重要。**
+如果对一些语言特性不了解，可以速览 [Modern C++ Tutorial: C++11/14/17/20 On the Fly](https://github.com/changkun/modern-cpp-tutorial)。如果有更细节之处没有讲明白，可以参考 [C++ reference](https://en.cppreference.com/w/)。

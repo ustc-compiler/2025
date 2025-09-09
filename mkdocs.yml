@@ -32,11 +32,11 @@ nav:
   - 首页: README.md
   - 公共文档:
     - C++ 介绍: common/simple_cpp.md
-    - Logging 工具使用: common/logging.md
+    # - Logging 工具使用: common/logging.md
     - IDE 配置: common/ide.md
-  - Lab0:
-    - Lab0 简介: lab0/index.md
-    - Linux 环境配置: lab0/linux.md
-    - LLVM 等软件环境配置: lab0/software.md
-    - Git 的使用: lab0/git.md
+  # - Lab0:
+  #   - Lab0 简介: lab0/index.md
+  #   - Linux 环境配置: lab0/linux.md
+  #   - LLVM 等软件环境配置: lab0/software.md
+  #   - Git 的使用: lab0/git.md
   - 拓展阅读: further/further.md

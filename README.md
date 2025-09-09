@@ -1,4 +1,4 @@
-# USTC _Principles and Techniques of Compiler_ 2025 course homepage
+# USTC _Principles and Techniques of Compiler(H)_ 2025 course homepage
 
 Homepage link: <https://ustc-compiler.github.io/2025>
 
