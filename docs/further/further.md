@@ -4,6 +4,14 @@
 
 LLVM 官方文档中的 [Getting Started](https://llvm.org/docs/GettingStarted.html) 可能不够更详细了解 LLVM 项目本身。可以参考 [Discourse 论文讨论](https://discourse.llvm.org/t/beginner-resources-documentation/5872) 进一步了解。
 
+LLVM IR 作为一种中间表示语言，独立于前端输入编程语言和后端汇编语言，方便进行代码变换和优化。关于该中间语言，可以参考
+
+如果希望了解如何编写 LLVM Passes 对 LLVM IR 做变换，推荐完成 [banach-space/llvm-tutor](https://github.com/banach-space/llvm-tutor)。该教程编写的 Pass 独立于 LLVM 项目树，将其作为插件的形式，这方便了 Pass 的快速开发（你知道大型 C++ 项目的链接速度的），也更适合新手上手 LLVM Pass 的编写。
+
+## Triton
+
+## PyTorch
+
 ## 广义 Compiler
 
 > 广义 OS 的复刻，OSH 还在追我！
@@ -18,11 +26,7 @@ LLVM 官方文档中的 [Getting Started](https://llvm.org/docs/GettingStarted.h
 
 [Meta LLM-Compiler](https://ai.meta.com/research/publications/meta-large-language-model-compiler-foundation-models-of-compiler-optimization/)。
 
-> 然而模型需要权限。
-
 ## 信息资源
-
-### 会议
 
 ### 课程
 
@@ -32,7 +36,10 @@ LLVM 官方文档中的 [Getting Started](https://llvm.org/docs/GettingStarted.h
 - MIT 课程主页：<http://6.035.scripts.mit.edu/fa18/>
 - PKU 编译原理：<https://github.com/pku-minic/online-doc>
 
-### 进阶课程
+相关课程:
+
+- 软件分析: <https://tai-e.pascal-lab.net/intro/overview.html>
+- CS 17-670: Virtual Machines and Managed Runtimes <https://www.cs.cmu.edu/~wasm/cs17-670/fall2022/>
 
 ### 其他网络资源
 
@@ -46,8 +53,21 @@ LLVM 官方文档中的 [Getting Started](https://llvm.org/docs/GettingStarted.h
 
 #### YouTube
 
+- [ACM SIGPLAN](https://www.youtube.com/@acmsigplan)
+  - PLDI
+  - OOPSLA
+  - PLMW
+- ...
+
+#### Meetings
+
+- [LLVM Developer's Meeting](https://llvm.org/devmtg/)
+- [PLCT-Weekly](https://github.com/plctlab/PLCT-Weekly)
+
 #### 知乎
 
-#### X
+TBD
 
 #### 博客
+
+TBD
