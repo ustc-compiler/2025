@@ -45,7 +45,9 @@
 
 ## 教材和参考书
 
-- <div id='textbook'></div>[1] 陈意云、张昱，[编译原理（第 4 版）](http://staff.ustc.edu.cn/~yuzhang/compiler/book_compiler_hep_v4.pdf)
+- 陈意云、张昱，[编译原理（第 4 版）](http://staff.ustc.edu.cn/~yuzhang/compiler/book_compiler_hep_v4.pdf)
+- 李诚、徐伟，现代编译器设计与实现（实验讲义版本，高等教育出版社待出版，2023）。[教材资源及实验框架](https://ustc-compiler-principles.github.io/textbook/)
+- A. V. Aho, M. S. Lam, R. Sethi, and J. D. Ullman 著，赵建华等译，编译原理，机械工业出版社，2017
 
 ## 声明
 

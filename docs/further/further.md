@@ -30,8 +30,6 @@ LLVM IR 作为一种中间表示语言，独立于前端输入编程语言和后
 
 ### 课程
 
-- <div id='textbook2'></div>[2] 李诚、徐伟，现代编译器设计与实现（实验讲义版本，高等教育出版社待出版，2023）。[教材资源及实验框架](https://ustc-compiler-principles.github.io/textbook/)
-- A. V. Aho, M. S. Lam, R. Sethi, and J. D. Ullman 著，赵建华等译，编译原理，机械工业出版社，2017
 - Stanford 课程主页：<http://web.stanford.edu/class/cs143/>
 - MIT 课程主页：<http://6.035.scripts.mit.edu/fa18/>
 - PKU 编译原理：<https://github.com/pku-minic/online-doc>
