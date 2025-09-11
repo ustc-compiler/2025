@@ -36,9 +36,9 @@ LLVM IR 作为一种中间表示语言，独立于前端输入编程语言和后
 - MIT 课程主页：<http://6.035.scripts.mit.edu/fa18/>
 - PKU 编译原理：<https://github.com/pku-minic/online-doc>
 
-相关课程:
+相关课程：
 
-- 软件分析: <https://tai-e.pascal-lab.net/intro/overview.html>
+- 软件分析：<https://tai-e.pascal-lab.net/intro/overview.html>
 - CS 17-670: Virtual Machines and Managed Runtimes <https://www.cs.cmu.edu/~wasm/cs17-670/fall2022/>
 
 ### 其他网络资源
