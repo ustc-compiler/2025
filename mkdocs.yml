@@ -8,7 +8,7 @@ theme:
   language: 'zh'
   features:
     - content.code.copy
-    - navigation.footer
+    - navigation.tabs
 markdown_extensions:
   - admonition
   - attr_list
@@ -32,10 +32,10 @@ extra_css:
   - css/extra.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
 nav:
-  - 首页: README.md
+  - 课程信息: README.md
+  - 课程安排: schedule.md
   - 公共文档:
-    - C++ 介绍: common/simple_cpp.md
-    # - Logging 工具使用: common/logging.md
+    - CPP 简介: common/simple_cpp.md
     - IDE 配置: common/ide.md
   # - Lab0:
   #   - Lab0 简介: lab0/index.md
