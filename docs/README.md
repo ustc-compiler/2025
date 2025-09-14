@@ -42,6 +42,7 @@
 | ---------- | -------- | ---------------------------------------------------------------------------------------------- |
 | 2025-09-07 | 引论     | [part1](./slides/01-intro.pdf)                                                                 |
 | 2025-09-09 | 词法分析 | [part1](./slides/02-lexicalAnalysis-Part1.pdf), [part2](./slides/02-lexicalAnalysis-Part2.pdf) |
+| 2025-09-15 | 词法分析-延伸 | [ext](./slides/02-lexicalAnalysis-Ext.pdf) |
 
 ## 教材和参考书
 
