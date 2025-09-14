@@ -175,7 +175,7 @@ C++11 引入了许多智能指针类型来帮助自动内存管理，本实验�
 
 ### Segmentation Fault
 
-在之后的实验中，你可能会各种各样的段错误（Segmentation Fault），不要害怕！clang 提供了一个工具来帮助我们解决内存泄漏。
+在之后的实验中，你可能会各种各样的段错误（Segmentation Fault）。Don't Panic！Address Sanitizer 来可以帮助我们定位内存泄漏问题。
 
 ```bash
 $ cd build
