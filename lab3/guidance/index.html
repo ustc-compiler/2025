@@ -1,0 +1,772 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Lab3 实验指导 - USTC 编译原理和技术(H) 2025</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lab3-实验指导" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="USTC 编译原理和技术(H) 2025" class="md-header__button md-logo" aria-label="USTC 编译原理和技术(H) 2025" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            USTC 编译原理和技术(H) 2025
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab3 实验指导
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ustc-compiler/2025" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ustc-compiler/2025
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="USTC 编译原理和技术(H) 2025" class="md-nav__button md-logo" aria-label="USTC 编译原理和技术(H) 2025" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    USTC 编译原理和技术(H) 2025
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ustc-compiler/2025" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ustc-compiler/2025
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    公共文档
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            公共文档
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/simple_cpp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    C++ 介绍
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/ide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IDE 配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../further/further/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    拓展阅读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#阶段一预热实验" class="md-nav__link">
+    <span class="md-ellipsis">
+      阶段一：预热实验
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="阶段一：预热实验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#仓库目录结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      仓库目录结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实验内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#编译" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#运行与测试" class="md-nav__link">
+    <span class="md-ellipsis">
+      运行与测试
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#阶段二编译器后端" class="md-nav__link">
+    <span class="md-ellipsis">
+      阶段二：编译器后端
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="阶段二：编译器后端">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#仓库目录结构_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      仓库目录结构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实验内容_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验内容
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#编译_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#运行" class="md-nav__link">
+    <span class="md-ellipsis">
+      运行
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#测试" class="md-nav__link">
+    <span class="md-ellipsis">
+      测试
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="lab3-实验指导">Lab3 实验指导<a class="headerlink" href="#lab3-实验指导" title="Permanent link">&para;</a></h1>
+<h2 id="阶段一预热实验">阶段一：预热实验<a class="headerlink" href="#阶段一预热实验" title="Permanent link">&para;</a></h2>
+<h3 id="仓库目录结构">仓库目录结构<a class="headerlink" href="#仓库目录结构" title="Permanent link">&para;</a></h3>
+<p>与预热实验相关的文件如下：</p>
+<div class="highlight"><pre><span></span><code>.
+├── ...
+├── include
+│   ├── common
+│   └── codegen/*
+└── tests
+    ├── ...
+    └── 3-codegen
+        └── warmup
+            ├── CMakeLists.txt
+            ├── ll_cases          &lt;- 需要翻译的 ll 代码
+            └── stu_cpp           &lt;- 学生需要编写的汇编代码手动生成器
+</code></pre></div>
+<h3 id="实验内容">实验内容<a class="headerlink" href="#实验内容" title="Permanent link">&para;</a></h3>
+<p>实验在 <code>tests/3-codegen/warmup/ll_cases/</code> 目录下提供了六个 <code>.ll</code> 文件。学生需要在 <code>tests/3-codegen/warmup/stu_cpp/</code> 目录中，依次完成 <code>assign_codegen.cpp</code>、<code>float_codegen.cpp</code>、<code>global_codegen.cpp</code>、<code>function_codegen.cpp</code>、<code>icmp_codegen.cpp</code> 和 <code>fcmp_codegen.cpp</code> 六个 C++ 程序中的 TODO。这六个程序运行后应该能够生成 <code>tests/3-codegen/warmup/ll_cases/</code> 目录下六个 <code>.ll</code> 文件对应的汇编程序。</p>
+<h3 id="编译">编译<a class="headerlink" href="#编译" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>2023ustc-jianmu-compiler
+$<span class="w"> </span>mkdir<span class="w"> </span>build
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+<span class="c1"># 使用 cmake 生成 makefile 等文件</span>
+$<span class="w"> </span>cmake<span class="w"> </span>..
+<span class="c1"># 使用 make 进行编译</span>
+$<span class="w"> </span>make
+</code></pre></div>
+<p>如果构建成功，你会在 <code>build</code> 文件夹下找到 <code>stu_assign_codegen</code>, <code>stu_float_codegen</code> 等可执行文件。</p>
+<h3 id="运行与测试">运行与测试<a class="headerlink" href="#运行与测试" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>在运行和测试之前，你应该确保你完成了<a href="../environment/">后端环境配置</a>。</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="c1"># 在 build 目录下操作</span>
+$<span class="w"> </span>./stu_assign_codegen<span class="w"> </span>&gt;<span class="w"> </span>assign.s
+$<span class="w"> </span>loongarch64-unknown-linux-gnu-gcc<span class="w"> </span>-static<span class="w"> </span>assign.s<span class="w"> </span>-o<span class="w"> </span>assign
+$<span class="w"> </span>qemu-loongarch64<span class="w"> </span>./assign
+$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+</code></pre></div>
+<p>你可以通过观察原来的 <code>.ll</code> 代码来推断 <code>echo $?</code> 应该返回的正确结果，也可以直接使用 <code>lli</code> 执行 <code>.ll</code> 文件来获取正确结果。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>请注意，<code>echo $?</code> 返回的值是 qemu 执行完毕后的退出状态，也就是你的程序的返回值。由于 Linux 系统的限制，这个返回值只包含低 8 位，即范围在 0 到 255 之间。如果你的程序返回值超过了这个范围，那么 <code>echo $?</code> 将只显示该返回值的低 8 位。</p>
+</div>
+<h2 id="阶段二编译器后端">阶段二：编译器后端<a class="headerlink" href="#阶段二编译器后端" title="Permanent link">&para;</a></h2>
+<h3 id="仓库目录结构_1">仓库目录结构<a class="headerlink" href="#仓库目录结构_1" title="Permanent link">&para;</a></h3>
+<p>与实验第二阶段相关的文件如下：</p>
+<div class="highlight"><pre><span></span><code>.
+├── include
+│   └── codegen/*                   # 相关头文件
+├── src
+│   └── codegen
+│       └── CodeGen.cpp         &lt;-- 学生需要补全的文件
+└── tests
+    ├── 3-codegen
+    │   └── autogen
+    │       ├── eval_lab3.sh    &lt;-- 测评脚本
+    │       └── testcases       &lt;-- lab3 第二阶段的测例目录一
+    └── testcases_general       &lt;-- lab3 第二阶段的测例目录二
+</code></pre></div>
+<h3 id="实验内容_1">实验内容<a class="headerlink" href="#实验内容_1" title="Permanent link">&para;</a></h3>
+<p>补全 <code>src/codegen/CodeGen.cpp</code> 中的 TODO，并按需修改 <code>include/codegen/CodeGen.hpp</code> 等文件，使编译器能够生成正确的汇编代码。</p>
+<div class="admonition info">
+<p class="admonition-title">实现约定</p>
+<p>出于简化实验的目的，我们只考核最核心的功能点，对如下情况不做要求：</p>
+<ul>
+<li>phi 指令：本实验不考核对于 phi 指令的处理</li>
+</ul>
+<ul>
+<li>函数调用传参：本次实验只考核使用寄存器传参的情况，即对于超多参数的栈上传参不做要求</li>
+</ul>
+<p>此外，存在部分 <code>void main() {...}</code> 的样例，其返回值是未定义的，我们要求这样的主函数通过寄存器 <code>$a0</code> 返回 0，以顺利进行测评。</p>
+</div>
+<h3 id="编译_1">编译<a class="headerlink" href="#编译_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>2023ustc-jianmu-compiler
+$<span class="w"> </span>mkdir<span class="w"> </span>build
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+<span class="c1"># 使用 cmake 生成 makefile 等文件</span>
+$<span class="w"> </span>cmake<span class="w"> </span>..
+<span class="c1"># 使用 make 进行编译</span>
+$<span class="w"> </span>make
+<span class="c1"># 安装以链接 libcminus_io.a</span>
+$<span class="w"> </span>sudo<span class="w"> </span>make<span class="w"> </span>install
+</code></pre></div>
+<p>如果构建成功，你会在 <code>build</code> 文件夹下找到 cminusfc 可执行文件，它能将 <code>.cminus</code> 文件输出为龙芯汇编文件。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>为了让 cminusfc 在 <code>$PATH</code> 中，一定要 <code>sudo make install</code>。</p>
+</div>
+<h3 id="运行">运行<a class="headerlink" href="#运行" title="Permanent link">&para;</a></h3>
+<p>完成第二阶段，编译器能够将 <code>.cminus</code> 文件翻译成正确的龙芯汇编 <code>.s</code> 文件：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 假设 cminusfc 的路径在你的 $PATH 中，并且你现在在 test.cminus 文件所在目录中</span>
+$<span class="w"> </span>cminusfc<span class="w"> </span>test.cminus<span class="w"> </span>-S
+</code></pre></div>
+<p>此时会在同目录下生成同名的汇编文件，在这里即为 <code>test.s</code>。</p>
+<p>为了运行得到的汇编文件，需要调用龙芯交叉编译器编译链接生成二进制文件 <code>test</code>：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 假设你位于 2023ustc-jianmu-compiler 目录，否则你应该修改下面 src/io/io.c 到具体的路径</span>
+$<span class="w"> </span>loongarch64-unknown-linux-gnu-gcc<span class="w"> </span>-static<span class="w"> </span>test.s<span class="w"> </span>src/io/io.c<span class="w"> </span>-o<span class="w"> </span><span class="nb">test</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>上面的命令编译了 <code>test.s</code>，并链接了 <code>io.c</code> 中的函数。</p>
+</div>
+<p>然后你可以使用 <code>qemu-loongarch64</code> 运行二进制文件 <code>test</code></p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>qemu-loongarch64<span class="w"> </span>./test
+</code></pre></div>
+<h3 id="测试">测试<a class="headerlink" href="#测试" title="Permanent link">&para;</a></h3>
+<p>在 <code>tests/3-codegen/autogen</code> 目录下，使用我们提供的 <code>eval_lab3.sh</code> 进行本地评测，其接受两个<strong>参数</strong>：</p>
+<ol>
+<li>测试样例目录：考核的两个测例目录分别是 <code>./testcases</code> 和 <code>../../testcases_general</code></li>
+<li>评测模式：<code>test</code> 和 <code>debug</code> 两种模式都能正常测评，后者会额外生成 <code>.ll</code> 文件</li>
+</ol>
+<p>脚本运行后，会留下如下文件/目录来辅助你 <strong>debug</strong>：</p>
+<ul>
+<li><code>output/</code> 目录：保存了评测中编译器产生的文件，如汇编文件、IR 文件和二进制文件等</li>
+<li><code>log.txt</code> 文件：该文件收录了编译器报错信息及评测的比较信息 (<code>diff</code> 的结果)</li>
+</ul>
+<p>出现错误时请查阅相关文件。</p>
+<p>在结束测评后，你可以使用 <code>./cleanup.sh</code> <strong>清空</strong>上述文件/目录，以保持仓库的清爽。</p>
+<p>以下是评测脚本的<strong>使用示例</strong>：</p>
+<p>以 <code>./testcases</code> 为测例目录，使用评测脚本 <code>test</code> 模式测试（我们使用正确的实现，但是故意在 <code>13-complex.cminus</code> 中制造了语法错误）：</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>./eval_lab3.sh<span class="w"> </span>./testcases<span class="w"> </span><span class="nb">test</span>
+<span class="o">[</span>info<span class="o">]</span><span class="w"> </span>Start<span class="w"> </span>testing,<span class="w"> </span>using<span class="w"> </span>testcase<span class="w"> </span>dir:<span class="w"> </span>./testcases
+<span class="m">0</span>-io...OK
+<span class="m">1</span>-return...OK
+<span class="m">2</span>-calculate...OK
+<span class="m">3</span>-output...OK
+<span class="m">4</span>-if...OK
+<span class="m">5</span>-while...OK
+<span class="m">6</span>-array...OK
+<span class="m">7</span>-function...OK
+<span class="m">8</span>-store...OK
+<span class="m">9</span>-fibonacci...OK
+<span class="m">10</span>-float...OK
+<span class="m">11</span>-floatcall...OK
+<span class="m">12</span>-global...OK
+<span class="m">13</span>-complex..../eval_lab3.sh:<span class="w"> </span>line<span class="w"> </span><span class="m">65</span>:<span class="w"> </span><span class="m">40958</span><span class="w"> </span>Segmentation<span class="w"> </span>fault<span class="w">      </span><span class="o">(</span>core<span class="w"> </span>dumped<span class="o">)</span><span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;cminusfc -S </span><span class="nv">$case</span><span class="s2"> -o </span><span class="nv">$asm_file</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$LOG</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+CE:<span class="w"> </span>cminusfc<span class="w"> </span>compiler<span class="w"> </span>error
+</code></pre></div>
+<p>从脚本输出中观察到样例 <code>13-complex</code> 没有通过，原因为 <code>CE: cminusfc compiler error</code>，表示 <code>cminusfc</code> 编译过程报错，打开 <code>log.txt</code> 检查报错信息：</p>
+<div class="highlight"><pre><span></span><code>==========./testcases/0-io.cminus==========
+1234                            1234
+0                               0
+...省略多行中间输出
+==========./testcases/13-complex.cminus==========
+error at line 7 column 5: syntax error
+</code></pre></div>
+<p>根据输出信息，我们了解到 <code>cminusfc</code> 检测到语法错误而退出，具体为 <code>13-complex.cminus</code> 中第 7 行第 5 列。</p>
+<p>直接使用初始代码尝试评测，每个样例都会报错 <code>CE: cminusfc compiler error</code>。</p>
+<details class="detail">
+<summary>使用初始代码评测后的 log 文件</summary>
+<div class="highlight"><pre><span></span><code>==========./testcases/0-io.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_call
+==========./testcases/1-return.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_call
+==========./testcases/2-calculate.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_alloca
+==========./testcases/3-output.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_call
+==========./testcases/4-if.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_alloca
+==========./testcases/5-while.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_alloca
+==========./testcases/6-array.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_alloca
+==========./testcases/7-function.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_alloca
+==========./testcases/8-store.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_alloca
+==========./testcases/9-fibonacci.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_alloca
+==========./testcases/10-float.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_alloca
+==========./testcases/11-floatcall.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_alloca
+==========./testcases/12-global.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_load
+==========./testcases/13-complex.cminus==========
+terminate called after throwing an instance of &#39;not_implemented_error&#39;
+what(): gen_alloca
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
