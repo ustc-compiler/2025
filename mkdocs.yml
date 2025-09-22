@@ -21,16 +21,18 @@ markdown_extensions:
   - pymdownx.superfences
   - markdown.extensions.def_list
   - mdx_truly_sane_lists
+  - pymdownx.arithmatex:
+      generic: true
   - toc:
       permalink: true
       slugify: !!python/name:markdown.extensions.toc.slugify_unicode
 extra_javascript:
   - javascripts/katex.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 extra_css:
   - css/extra.css
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 nav:
   - 首页: README.md
   - 公共文档:
