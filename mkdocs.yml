@@ -9,6 +9,7 @@ theme:
   features:
     - content.code.copy
     - navigation.tabs
+    - toc.integrate
 markdown_extensions:
   - mdx_spanner # see https://pypi.org/project/mdx-spanner/
   - admonition
