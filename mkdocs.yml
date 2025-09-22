@@ -42,4 +42,6 @@ nav:
   #   - Linux 环境配置: lab0/linux.md
   #   - LLVM 等软件环境配置: lab0/software.md
   #   - Git 的使用: lab0/git.md
-  - 拓展阅读: further/further.md
+  - 拓展阅读:
+    - 从词法分析到LLM Tokenizer: further/tokenizer.md
+    - 其他: further/further.md
