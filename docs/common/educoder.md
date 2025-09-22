@@ -19,7 +19,7 @@
 | _ = _            | 3 理解和使用 C++ 的智能指针                      | [Educoder Link](https://www.educoder.net/shixuns/fqbzhwnp/challenges) | [校内头歌链接](https://educoder.ustc.edu.cn/shixuns/fqbzhwnp/challenges) |
 | 词法分析         | 4 词法分析器的构造                               | [Educoder Link](https://www.educoder.net/shixuns/ecnb34g5/challenges) | [校内头歌链接](https://educoder.ustc.edu.cn/shixuns/9v3ug4em/challenges) |
 | 解析器           | 5 ANTLR4 的基础应用 - 为正规式生成解析树         | [Educoder Link](https://www.educoder.net/shixuns/w8sftvkr/challenges) | [校内头歌链接](https://educoder.ustc.edu.cn/shixuns/gbostje6/challenges) |
-|                 | 6 ANTLR4 的进阶应用 - 为 C1 语言构造解析器       | [Educoder Link](https://www.educoder.net/shixuns/qix6mfn3/challenges) | [校内头歌链接](https://educoder.ustc.edu.cn/shixuns/576tkvz3/challenges) |
+|                  | 6 ANTLR4 的进阶应用 - 为 C1 语言构造解析器       | [Educoder Link](https://www.educoder.net/shixuns/qix6mfn3/challenges) | [校内头歌链接](https://educoder.ustc.edu.cn/shixuns/576tkvz3/challenges) |
 | _ = _            | 7 使用 Flex 和 Bison 构建 SysYF 词法和语法分析器 | [Educoder Link](https://www.educoder.net/shixuns/o7tu4wyv/challenges) | [校内头歌链接](https://educoder.ustc.edu.cn/shixuns/o7tu4wyv/challenges) |
 | 语义分析         | 8 构建 SysYF 语义检查器                          | [Educoder Link](https://www.educoder.net/shixuns/npa8mlhe/challenges) | [校内头歌链接](https://educoder.ustc.edu.cn/shixuns/npa8mlhe/challenges) |
 | 中间代码 生成    | 9 为 SysYF 语言生成 LLVM IR 中间代码             | [Educoder Link](https://www.educoder.net/shixuns/tlrqaeiu/challenges) | [校内头歌链接](https://educoder.ustc.edu.cn/shixuns/t5fgvxfu/challenges) |
