@@ -8,7 +8,7 @@ theme:
   language: 'zh'
   features:
     - content.code.copy
-    - navigation.footer
+    - navigation.tabs
 markdown_extensions:
   - mdx_spanner # see https://pypi.org/project/mdx-spanner/
   - admonition
