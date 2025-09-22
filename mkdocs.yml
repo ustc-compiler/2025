@@ -8,8 +8,10 @@ theme:
   language: 'zh'
   features:
     - content.code.copy
-    - navigation.footer
+    - navigation.tabs
+    - toc.integrate
 markdown_extensions:
+  - mdx_spanner # see https://pypi.org/project/mdx-spanner/
   - admonition
   - attr_list
   - pymdownx.emoji:
@@ -35,6 +37,7 @@ extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
 nav:
   - 首页: README.md
+  - 课程安排: schedule.md
   - 公共文档:
     - C++ 介绍: common/simple_cpp.md
     # - Logging 工具使用: common/logging.md
