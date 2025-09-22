@@ -20,6 +20,15 @@ jobs:
       - run: npm install
       - run: npm test
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.repository == 'ustc-compiler/2025'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
       - name: deploy
         if: always()
         run: mkdocs gh-deploy --force
