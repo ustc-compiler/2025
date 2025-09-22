@@ -243,7 +243,6 @@ My手机のbattery快要dead了，我必须要find一个power bankすぐに！Ot
 - **自由探索**：给出探索问题，形成小组，制定计划，工作记录（问题/进展总结与分析），测试基准，实验及评估
 
 参考：
-
 - [BPE 原始文章《Neural Machine Translation of Rare Words with Subword Units》](https://arxiv.org/abs/1508.07909)
 - [GPT-2 技术报告（包含字节级 BPE）《Language Models are Unsupervised Multitask Learners》](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 - [WordPiece 原始文章《JAPANESE AND KOREAN VOICE SEARCH》](https://static.googleusercontent.com/media/research.google.com/ja//pubs/archive/37842.pdf)
